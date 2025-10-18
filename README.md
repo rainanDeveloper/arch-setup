@@ -7,7 +7,7 @@ First, boot your default arch linux installation image, setup basic things to be
 
 set keyboard:
 
-````
+
 ```sh
 loadkeys br-abnt2
 ```
