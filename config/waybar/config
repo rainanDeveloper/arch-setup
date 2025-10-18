@@ -1,0 +1,56 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/updates", "custom/volume", "custom/battery", "custom/network", "custom/clock", "custom/power"],
+    "background": "rgba(0,0,0,0)",
+    "padding": 4,
+    "spacing": 4,
+    "hyprland/window": {
+        "max-length": 50,
+    },
+    "custom/updates": {
+        "exec": "~/.config/waybar/scripts/updates.sh",
+        "interval": 60,
+        "tooltip": true,
+        "on-click": "alacritty -e yay",
+        "return-type": "json"
+    },
+    "custom/volume": {
+        "exec": "~/.config/waybar/scripts/volume.sh",
+        "interval": 1,
+        "on-click": "pamixer --toggle-mute",
+        "tooltip": true
+    },
+    "custom/battery": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/battery-icon.sh",
+        "interval": 10,
+        "return-type": "json",
+        "tooltip": true
+    },
+    "custom/clock": {
+        "exec": "~/.config/waybar/scripts/clock-with-calendar.sh",
+        "interval": 60,
+        "return-type": "json",
+        "tooltip": true
+    },
+    "custom/network": {
+        "exec": "~/.config/waybar/scripts/network-info.sh",
+        "interval": 20,
+        "return-type": "json",
+        "tooltip": true,
+        "on-click": "alacritty -e nmtui"
+    },
+    "custom/power": {
+        "exec": "~/.config/waybar/scripts/power-button.sh",
+        "interval": "600",
+        "on-click": "wlogout",
+        "return-type": "json"
+    },
+    "hyprland/workspaces": {
+        "format": "{}"
+    }
+}
+

@@ -1,0 +1,59 @@
+* {
+  font-family: "MesloLGS NF", sans-serif;
+}
+
+window {
+  background: rgba(12, 12, 12, 0.4)
+}
+
+button {
+  margin: 8px;
+  font-size: 20px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  background-color: rgba(12, 12, 12, 0.3);
+  border: 3px solid #ffffff;
+  outline: none;
+  box-shadow: none;
+  border-radius: 20px;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: rgba(12, 12, 12, 0.8);
+  color: #3964ba;
+  border: 3px solid #3964ba;
+}
+
+/*
+ *  Buttons
+ * */
+
+#lock {
+  background-image: image(url('icons/lock.png'));
+}
+
+#logout {
+  background-image: image(url('icons/logout.png'));
+}
+
+#suspend {
+  background-image: image(url('icons/suspend.png'));
+}
+
+#hibernate {
+  background-image: image(url('icons/hibernate.png'));
+}
+
+#shutdown {
+  background-image: image(url('icons/shutdown.png'));
+}
+
+#reboot {
+  background-image: image(url('icons/reboot.png'));
+}
+
+

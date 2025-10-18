@@ -1,0 +1,114 @@
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Applications";
+    display-window: "Windows";
+    drun-display-format: "{icon} {name}";
+}
+
+* {
+    bg-color: #10121f;
+    bg-item-selected: #9ebbf3;
+    fg-color: #f8f8f8;
+    fg-item-selected: #131a28;
+    fg-item-not-selected: #9797b1;
+}
+
+window {
+    background-color: @bg-color;
+    font-size: 22;
+    border-radius: 5px;
+    border: none;
+}
+
+mainbox {
+    padding: 25;
+    font-size: 22;
+    wiidth: 0.4;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @fg-color;
+    padding:    1px ;
+    font-size: 22;
+}
+case-indicator {
+    spacing:    0;
+    text-color: @fg-color;
+    font-size: 22;
+}
+entry {
+    spacing:    0;
+    text-color: @fg-color;
+    font-size: 22;
+}
+prompt {
+    spacing:    0;
+    text-color: @fg-color;
+    font-size: 22;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    padding: 10;
+    border: 0px;
+    font-size: 22;
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @fg-color;
+    font-size: 22;
+}
+
+listview {
+    border: 0px;
+    background-color: transparent;
+    font-size: 22;
+    lines: 8;
+}
+
+element {
+    background-color: transparent;
+    padding: 10;
+    text-color: @fg-item-not-selected;
+    font-size: 22;
+    border-radius: 3;
+}
+
+element.alternate {
+    background-color: transparent;
+    text-color: @fg-item-not-selected;
+    font-size: 22;
+}
+
+element.alternate.normal {
+    background-color: transparent;
+    text-color: @fg-item-not-selected;
+    font-size: 22;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-item-not-selected;
+    font-size: 22;
+}
+
+element.selected.normal {
+    background-color: @bg-item-selected;
+    text-color: @fg-item-selected;
+    font-size: 22;
+}
+
+element-icon {
+    size: 1.2em;
+    background-color: transparent;
+    margin: 0px 8px 0px 0px;   /* top right bottom left */
+}
+
+textbox {
+    text-color: @fg-color;
+    padding: 25;
+}

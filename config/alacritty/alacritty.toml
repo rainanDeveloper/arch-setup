@@ -1,0 +1,13 @@
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.65
+startup_mode = "Windowed"
+
+[window.padding]
+x = 8
+y = 8
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular" }
+size = 12

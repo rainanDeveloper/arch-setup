@@ -1,0 +1,12 @@
+[Unit]
+Description=Prepare lock wallpaper and lock screen on lid close
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c '%h/.config/hypr/scripts/set-hyprlock-wallpaper.sh && hyprlock'
+Environment=WAYLAND_DISPLAY=wayland-1
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+Environment=HOME=%h
+Environment=XDG_CONFIG_HOME=%h/.config
+

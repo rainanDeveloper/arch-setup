@@ -1,0 +1,115 @@
+@define-color white #ffffff;
+@define-color border-color @white;
+@define-color text-color @white;
+@define-color main-bg-color transparent;
+@define-color filled-bg-color @white;
+@define-color filled-alt-bg-color #10121f;
+@define-color filled-text-color #131a28;
+@define-color tooltip-bg-color #222;
+@define-color workspace-item #b9c4c9;
+@define-color workspace-active #3964ba;
+
+* {
+    font-family: "MesloLGS NF", sans-serif;
+}
+
+#waybar {
+    background: @main-bg-color;
+    color: @text-color;
+}
+
+.module {
+    padding: 0 8px;
+    border-radius: 20px;
+    border: 2px solid @border-color;
+    background: @main-bg-color;
+}
+
+#waybar > .module:first-child {
+  margin-left: 8px;
+}
+
+#waybar > .module:last-child {
+  margin-right: 8px;
+}
+
+tooltip {
+  background-color: @tooltip-bg-color;
+  color: @text-color;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 10pt;
+}
+
+#window {
+    background: @filled-bg-color;
+    color: @filled-text-color;
+}
+
+#workspaces {
+    background: @filled-bg-color;
+    padding: 0;
+    border: solid 4px #ffffff;
+}
+
+#workspaces button {
+    background: @workspace-item;
+    border: none;
+    border-radius: 20px;
+    min-width: 30px;
+    margin: 0px 5px;
+    font-size: 0px;
+    color: transparent;
+    padding: 0px;
+    transition: background 0.3s ease, min-width 0.3s ease;
+}
+
+#workspaces button:first-child {
+    margin: 0px 5px 0px 0px;
+}
+
+#workspaces button:last-child {
+    margin: 0px 0px 0px 5px;
+}
+
+#workspaces button.active {
+    background: @workspace-active;
+    min-width: 60px;
+}
+
+#custom-volume {
+  background: @filled-bg-color;
+  color: @filled-text-color;
+}
+
+#custom-battery {
+  background: @filled-bg-color;
+  color: @filled-text-color;
+}
+
+#custom-network {
+    background: @filled-alt-bg-color;
+}
+
+#custom-clock {
+    background: @filled-alt-bg-color;
+}
+
+#custom-power {
+  background: @filled-alt-bg-color;
+}
+
+.green {
+  background: #32bc32;
+  border: none;
+}
+
+.yellow {
+  background: #c6c61d;
+  border: none;
+}
+
+.red {
+  background: #cc0c0c;
+  border: none;
+}

@@ -1,0 +1,6 @@
+[Added Associations]
+image/png=feh.desktop;gimp.desktop;
+application/pdf=userapp-evince-PGD3D3.desktop;
+
+[Default Applications]
+application/pdf=userapp-evince-PGD3D3.desktop

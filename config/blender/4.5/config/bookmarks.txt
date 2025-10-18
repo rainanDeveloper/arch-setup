@@ -1,0 +1,5 @@
+[Bookmarks]
+[Recent]
+/home/rainanm/Syncthing/Codeforge-Media/Images/New Logo/
+/home/rainanm/Syncthing/Codeforge-Media/Blender/textures/
+/home/rainanm/Syncthing/Codeforge-Media/Blender/models/

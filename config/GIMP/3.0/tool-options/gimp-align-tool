@@ -1,0 +1,6 @@
+# GIMP gimp-align-tool options
+
+(align-reference selection)
+(pivot-x 0)
+
+# end of gimp-align-tool options

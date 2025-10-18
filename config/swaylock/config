@@ -1,0 +1,29 @@
+ignore-empty-password
+
+# font
+font=MesloLGS NF
+font-size=40
+
+# Colors
+inside-color=00000044
+inside-clear-color=00000044
+inside-ver-color=00000044
+inside-wrong-color=00000044
+ring-color=ffffff
+
+text-color=ffffff
+text-clear-color=ffffff
+text-ver-color=ffffff
+text-wrong-color=ffffff
+
+# indicator
+indicator
+indicator-radius=250
+indicator-thickness=20
+
+# background image
+image=/tmp/swaylock/screenlock-wallpaper.png
+
+
+# Effects
+effect-blur=6x6

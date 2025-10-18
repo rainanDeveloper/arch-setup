@@ -1,0 +1,3 @@
+  Light
+   cube-texture.png
+  Camera.001
